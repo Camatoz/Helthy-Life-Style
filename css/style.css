@@ -227,6 +227,7 @@ body {
 }
 /* Exclusive-1 style end*/
 /* Exclusive style end */
+
 /* Member style start */
 .member {
   padding-top: 80px;
@@ -246,12 +247,13 @@ body {
 .member_disc {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
 .member_desc_wraper {
-  max-width: 630px;
+  padding-bottom: 65px;
 }
 
 .member_link_wrapper {
@@ -268,8 +270,170 @@ body {
   padding-right: 15px;
 }
 
+.member_link:hover {
+  opacity: 0.75;
+}
+
 .member_link_arrow {
   width: 20px;
 }
 
+.member_picture_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.member_img {
+  width: 30em;
+}
 /* Member style end */
+
+/* Section Get Started style start */
+.get_started {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.get_started_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 0px;
+}
+
+.get_start_title_wrapper {
+  width: 40%;
+}
+
+.get_start_subtitle_wrapper {
+  width: 40%;
+}
+
+.get_start_title {
+  font-size: 56px;
+  line-height: 56px;
+  padding-bottom: 30px;
+}
+
+.get_start_link {
+  font-size: 18px;
+  line-height: 21.6px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-right: 15px;
+  color: #ffffff;
+}
+
+.get_start_link:hover {
+  opacity: 0.75;
+}
+
+.member_link_arrow {
+  color: #ffffff;
+}
+
+.get_start_subtitle {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 27px;
+  margin-left: 4em;
+  margin-right: 3em;
+}
+
+.get_start_subtitle_num {
+  padding-right: 10px;
+}
+/* Section Get Started style end */
+
+/* Section Price style start */
+.price {
+  padding-top: 80px;
+}
+
+.price_title_wrapper {
+  max-width: 280px;
+  padding-bottom: 60px;
+}
+
+.price_title {
+  font-size: 40px;
+  line-height: 40px;
+  padding-bottom: 22px;
+}
+
+.price_subtitle {
+  font-size: 22px;
+  line-height: 26.4px;
+}
+
+.price_block_with_title,
+.price_block_cards {
+  width: 50%;
+}
+
+.price_block_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 44px 0;
+}
+
+.price_block_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price_block_with_card {
+  padding-right: 50px;
+}
+
+.price_block_title {
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.price_card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price_card_title {
+  font-size: 22px;
+  line-height: 26.4px;
+  padding-bottom: 15px;
+}
+
+.price_num {
+  font-size: 32px;
+  line-height: 32px;
+  padding-bottom: 4px;
+}
+
+.price_status {
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+
+.price_discount {
+  font-size: 12px;
+  line-height: 16px;
+  color: #0888c8;
+}
+
+/* advantages style start */
+.advantage_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: solid #ebebeb;
+}
+/* advantages style end */
+/* Section Price style end  */
