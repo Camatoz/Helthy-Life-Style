@@ -429,11 +429,56 @@ body {
 }
 
 /* advantages style start */
+.advantages {
+  padding-bottom: 40px;
+}
+
 .advantage_box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 10px 0;
   border-bottom: solid #ebebeb;
 }
+
+.adv_subtitle_wrapper {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 4em;
+  padding-left: 1em;
+}
 /* advantages style end */
+/* Plan style start */
+.plan_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.plan_title {
+  font-size: 28px;
+  line-height: 33.6px;
+}
+
+.plan_subtitle_desc {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+
+.plan_subtitle_wrapper {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.plan_subtitle_desc > img {
+  padding-right: 15px;
+}
+/* Plan style end*/
 /* Section Price style end  */
