@@ -482,3 +482,39 @@ body {
 }
 /* Plan style end*/
 /* Section Price style end  */
+
+/* Section Question style start */
+.question {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.question_title {
+  font-size: 40px;
+  line-height: 40px;
+  padding-bottom: 45px;
+}
+
+.questions_wrapper {
+  width: 55em;
+}
+
+.question_one {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: solid #cacaca;
+}
+
+.question_one:first-child {
+  border-top: solid #cacaca;
+}
+/* Section Question style end */
