@@ -530,6 +530,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .support_cont_disc {
@@ -540,5 +541,27 @@ body {
   font-size: 56px;
   line-height: 56px;
   padding-bottom: 20px;
+}
+
+.support_subtitle {
+  font-size: 24px;
+  line-height: 26.4px;
+  padding-bottom: 20px;
+}
+
+.support_links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.support_link {
+  font-size: 18px;
+  line-height: 21.6px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-right: 15px;
+  color: #ffffff;
+  padding-bottom: 19px;
 }
 /* Section Support style end */
