@@ -611,6 +611,12 @@ body {
   padding-bottom: 15px;
 }
 
+.footer_select_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .footer_logo_wrapper {
   width: 25%;
 }
@@ -640,14 +646,43 @@ body {
 }
 
 .footer_select {
-  padding-left: 5px;
+  position: relative;
   width: 150px;
   height: 50px;
-  background-color: #1a1a1a;
-  font-size: 14px;
-  line-height: 14px;
-  color: #ffffff;
-  border: none;
+  margin-bottom: 15px;
 }
 
+.footer_select select {
+  -webkit-appearance: none; /* Убирает стрелку в Safari и Chrome */
+  -moz-appearance: none; /* Убирает стрелку в Firefox */
+  appearance: none; /* Убирает стандартное оформление */
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стили для скрытия стандартной стрелки */
+.footer_select::after {
+  content: ""; /* Обязательно для отображения псевдоэлемента */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 12px; /* Размер изображения */
+  height: 12px;
+  background: url("../img/svg/arrow-down.svg") no-repeat center center; /* Путь к изображению */
+  background-size: contain;
+  pointer-events: none; /* Чтобы изображение не блокировало клики */
+}
+
+/* Дополнительный стиль при наведении */
+.footer_select select:hover {
+  background-color: #383737;
+}
 /* Footer style end */
